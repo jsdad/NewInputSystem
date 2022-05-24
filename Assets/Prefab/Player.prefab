@@ -270,3 +270,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
   rotateSpeed: 0.1
+  rb: {fileID: 0}
+  playerControls:
+    m_Name: Player Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: fdc9a8e5-e8c3-412f-a9af-cd2f04872b7e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []

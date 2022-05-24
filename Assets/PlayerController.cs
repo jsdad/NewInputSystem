@@ -5,15 +5,15 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed = 5;
+    private Vector2 MovementInput;
 
+    
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(new Vector3(MovementInput.x, 0, MovementInput.y) * speed * Time.deltaTime);        
     }
+
+    public void OnMove(InputAction.CallbackContext ctx) => MovementInput = ctx.ReadValue<Vector2>();
 }
